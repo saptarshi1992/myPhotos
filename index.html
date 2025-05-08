@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title> </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Photo Gallery</h1>
+      <p></p>
+    </header>
+    <main>
+      <div class="carousel">
+        <div class="card" data-flag="1" data-flag-alt="1d">
+          <h2>Darjelling(2022)</h2>
+          <div class="carousel-vertical">
+            <figure>
+              <img src="darjelling-img/img-1.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="darjelling-img/img-2.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="darjelling-img/img-3.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="darjelling-img/img-4.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="darjelling-img/img-5.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="darjelling-img/img-6.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="darjelling-img/img-7.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="card" data-flag="2" data-flag-alt="2d">
+          <h2>Darjelling(2021)</h2>
+          <div class="carousel-vertical">
+            <figure>
+              <img src="darjelling-1-img/img-1.jpg" alt="" />
+            </figure>
+            <figure><img src="darjelling-1-img/img-2.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-3.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-4.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-5.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-6.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-7.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-8.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-9.jpg" alt="" /></figure>
+            <figure><img src="darjelling-1-img/img-10.jpg" alt="" /></figure>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="button-stack">
+      <button
+        onclick="experimentDialog.showModal()"
+        class="experiment-notes-button">
+        About
+      </button>
+    </div>
+
+    <dialog id="experimentDialog" class="experiment-notes" closedby="any">
+      <div class="dialog-sidebar">
+        <button onclick="experimentDialog.close()"></button>
+        <section>
+          <article>
+            <h2>About</h2>
+            <p>
+              Hi, I'm Saptarshi — a web developer from India with a strong background in backend development. Recently, I’ve been diving deeper into the frontend world, and CSS has become a growing area of interest for me.
+            </p>
+            <p>
+              While organizing my travel photo collection, I was inspired to build something creative using CSS. I came across the
+              <a href="https://chrome.dev/carousel/" target="_blank" rel="noopener noreferrer">
+                CSS Carousel Gallery
+              </a>
+              by
+              <a href="https://nerdy.dev/" target="_blank" rel="noopener noreferrer">
+                Adam Argyle
+              </a>, and thought it would be a great opportunity to try out this new CSS feature.
+            </p>
+            <p>
+              I decided to build a carousel-within-a-carousel structure — a horizontal carousel for different countries I've visited, and a vertical carousel within each for the photos. It’s my way of exploring CSS while organizing my memories from travel.
+            </p>
+            <p>
+              Along the way, I also experimented with <code>position-anchor</code> and <code>position-area</code>, which let me position elements independently of their parent containers. It was really exciting to explore how much control CSS now offers.
+            </p>
+          
+            <h3>Challenges I Faced</h3>
+            <p>
+              One tricky part was managing opacity. I wanted to reduce the opacity of the next photo in the stack without showing the title and description — but CSS selectors got messy fast, and I kept accidentally breaking the layout.
+            </p>
+            <p>
+              Another issue was browser compatibility. Some features didn’t behave as expected in unsupported browsers. While scrolling still worked, some content got misaligned. I plan to improve fallback support later, but for now, I’ve added a warning banner for unsupported browsers.
+            </p>
+            <p>
+              Overall, while CSS Carousels are fun to experiment with, I wouldn’t necessarily recommend them for serious photo galleries — they can get a bit clunky. Still, this was a great learning experience, and I’m happy I pushed myself to try something new.
+            </p>
+          </article>
+          
+            <h2>Credits</h2>
+            <ul class="credit-list">
+              <li>
+           
+                <p>
+                  This
+                  <a
+                    href="https://developer.chrome.com/blog/carousels-with-css"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >blog post</a
+                  >
+                  explaining the new feature set.
+                </p>
+                <p>
+                  The amazing
+                  <a
+                    href="https://chrome.dev/carousel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >CSS Carousel Gallery</a
+                  >, full of cool demos that showcase the capabilities of CSS
+                  Carousels.
+                </p>
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >MDN Web Docs</a
+                >
+                <p>
+                  Used throughout when I got stuck, but it was especially handy
+                  when I wanted to better understand
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >CSS anchor positioning</a
+                  >.
+                </p>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <footer>
+          <p>@Copyright  2025, </p>
+          <p>
+            <a href="https://saptarshi1992.github.io/saptarshi_cv/" target="_blank"rel="noopener noreferrer">Saptarshi</a>
+          </p>
+        </footer>
+      </div>
+    </dialog>
+  </body>
+</html>
